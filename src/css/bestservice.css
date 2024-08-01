@@ -1,0 +1,67 @@
+body{
+    color: white;
+}
+.bestservice{
+    background-color: black;
+    background-image: url("../images/sphere.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.bestservice>.bestservice-heading{
+font-family: Josefin Sans;
+font-size: 20px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+
+}
+
+.bestservice>.bestservice-main-heading{
+font-family: Work Sans;
+font-size: 60px;
+font-weight: 500;
+line-height: 60px;
+text-align: center;
+
+}
+
+.bestservice>.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-gap: 20px;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.bestservice>.services-grid>.service-card {
+   
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.bestservice>.services-grid>.service-card>.service-card-content{
+    text-align: left;
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================== */
+/* Tablet and Mobile Mode */
+
+@media screen and (max-width: 768px) {
+    .bestservice>.services-grid {
+    grid-template-columns: 1fr ;
+    }
+}
