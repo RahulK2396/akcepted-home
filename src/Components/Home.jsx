@@ -1,7 +1,7 @@
-import React from 'react';
+
 import Hero from './Hero';
 import About from './About';
-import Services from './Services';
+import BestService from './BestService';
 import Work from './Work';
 import Contact from './Contact';
 
@@ -10,7 +10,7 @@ const Home = () => {
         <div className=' overflow-x-hidden'>
             <Hero />
             <About />
-            <Services />
+            <BestService />
             <Work />
             <Contact />
         </div>
