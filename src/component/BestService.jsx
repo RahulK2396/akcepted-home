@@ -5,8 +5,8 @@ import { BESTSERVICES } from '../Constant'
 function BestService() {
   return (
     <div className='bestservice'>
-        <h3 className='bestservice-heading'>{BESTSERVICES.HEADING}</h3>
-        <h3 className='bestservice-main-heading'>{BESTSERVICES.MAIN_HEADING}</h3>
+        <div className='bestservice-heading'>{BESTSERVICES.HEADING}</div>
+        <div className='bestservice-main-heading'>{BESTSERVICES.MAIN_HEADING}</div>
         <div  className="services-grid">
             {BESTSERVICES.SERVICES.map((service)=>{
                 return(

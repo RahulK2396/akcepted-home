@@ -1,11 +1,30 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "../css/latestproject.css"
 import { LATEST_PROJECT } from '../Constant'
 import arrow from "../images/arrow.svg"
 import blackarrow from "../images/black-arrow.svg"
+import backgroundImage from "../images/grapes.svg"
 
 function LatestProject() {
     const galleryRef = useRef(null);
+
+    
+    useEffect(() => {
+        const scrollInterval = setInterval(() => {
+            if (galleryRef.current) {
+                const { scrollLeft, scrollWidth, clientWidth } = galleryRef.current;
+                if (scrollLeft + clientWidth >= scrollWidth) {
+                    galleryRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+                    // galleryRef.current.scrollLeft = 0; // Reset to the start
+                } else {
+                    galleryRef.current.scrollTo({ left: scrollLeft + clientWidth, behavior: 'smooth' }); 
+                    // galleryRef.current.scrollLeft += clientWidth; // Scroll by one gallery width
+                }
+            }
+        }, 2500); // Adjust the interval as needed
+
+        return () => clearInterval(scrollInterval);
+    }, []);
 
     const handleScroll = () => {
         if (galleryRef.current) {
@@ -14,6 +33,7 @@ function LatestProject() {
     };
     return (
         <div className='latestproject'>
+            
             <div className="latestproject-grid">
                 <div>
                 <p className='latestproject-heading'>{LATEST_PROJECT.HEADING}</p>
@@ -21,6 +41,7 @@ function LatestProject() {
                     <img src={blackarrow} alt='blackarrow' />
                 </p>
                 </div>
+                
             </div>
             <div className="project-grid">
 
@@ -34,8 +55,8 @@ function LatestProject() {
                 </button>
 
             </div>
-
-
+            <img src={backgroundImage} alt="Background" className="background-image" />
+            
         </div>
     )
 }

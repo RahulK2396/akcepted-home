@@ -9,7 +9,7 @@ import image2 from './images/image2.svg'
 import image3 from './images/image3.svg'
 
 export const BESTSERVICES={
-    HEADING:'OUT BEST SERVICES',
+    HEADING:'OUR BEST SERVICES',
     MAIN_HEADING:'We provide end-to-end solutions',
     SERVICES:[
         {
