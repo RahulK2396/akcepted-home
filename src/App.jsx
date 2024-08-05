@@ -30,7 +30,7 @@ import BestService from './Components/BestService';
 import LatestProject from './Components/LatestProject';
 import GetinTouch from './Components/GetinTouch';
 import Community from './Components/Community';
-
+import SignUp from './Components/SignUp';
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
         <Route path="/about" element={<About />} />
       <Route path='/community' element={<Community />} />
         <Route path='/getintouch' element={<GetinTouch />} />
+        <Route path="/register" element={<SignUp />} />
       </Routes>
       <Footer />
     </Router>

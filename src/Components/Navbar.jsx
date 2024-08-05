@@ -54,6 +54,14 @@ const Navbar = () => {
                         >
                             Contact
                         </NavLink>
+                        <NavLink
+                            to="/register"
+                            className={({ isActive }) =>
+                                `text-white px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-[#f28125]' : 'hover:text-[#f28125] hover:underline'}`
+                            }
+                        >
+                            SignUp
+                        </NavLink>
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -108,6 +116,15 @@ const Navbar = () => {
                             }
                         >
                             Contact
+                        </NavLink>
+                        <NavLink
+                            to="/register"
+                            onClick={closeMenu}
+                            className={({ isActive }) =>
+                                `block text-white px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#f28125]' : 'hover:text-[#f28125] hover:underline'}`
+                            }
+                        >
+                            SignUp
                         </NavLink>
                     </div>
                 </div>
