@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'background': "url('./src/assets/herobg.png')"
+        'background': "url('./src/assets/herobg.png')",
+        "getintouchcenter": "url('./src/assets/Torus_Standing.svg')",
       },
       textDecoration: {
         'none': 'none',

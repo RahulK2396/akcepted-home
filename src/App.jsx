@@ -21,14 +21,15 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import Work from './Components/Work';
 import About from './Components/About';
-import Contact from './Components/Contact';
 import './index.css';
 import Home from './Components/Home';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Footer from './Components/Footer';
 import BestService from './Components/BestService';
+import LatestProject from './Components/LatestProject';
+import GetinTouch from './Components/GetinTouch';
+import Community from './Components/Community';
 
 
 function App() {
@@ -37,10 +38,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/work" element={<LatestProject />} />
         <Route path="/services" element={<BestService />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+      <Route path='/community' element={<Community />} />
+        <Route path='/getintouch' element={<GetinTouch />} />
       </Routes>
       <Footer />
     </Router>

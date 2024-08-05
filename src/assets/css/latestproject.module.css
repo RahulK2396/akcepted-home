@@ -1,0 +1,123 @@
+.latestproject{
+    
+    color: black;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.latestproject>.latestprojectGrid>div>.latestprojectHeading{
+
+font-size: 81px;
+font-weight: 500;
+line-height: 100px;
+letter-spacing: -3px;
+text-align: left;
+margin-bottom: unset;
+
+}
+
+.latestprojectCompany{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.scrollButton{
+    
+    width: fit-content;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #040404;
+    opacity: 0.8;
+    cursor: pointer;
+    border: unset;
+
+}
+.latestproject>.latestprojectGrid>div{
+    
+    text-align: left;
+    padding-left: 10px;
+
+}
+.backgroundImage {
+    position: absolute;
+    
+    left: 0;
+    width: 375px;
+    height: 446px;
+  margin-top: 150px;
+    opacity: 0px;
+    z-index: -1; 
+  }
+
+.latestproject>.latestprojectGrid{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.imageGallery{
+    display: flex;
+    flex-direction: row;
+    width: 808px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    gap: 12px;
+}
+
+.galleryImage{
+    width: 325px;
+    height: 505px;
+
+}
+
+.projectGrid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+
+/* ============================================================== */
+/* Tablet and Mobile Mode */
+
+@media screen and (max-width: 768px) {
+    .scrollButton{
+        display: none;
+    }
+
+    .imageGallery{
+        flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .latestproject{
+        flex-direction: column;
+    }
+.backgroundImage {
+    display: none;
+}    
+.latestproject>.latestprojectGrid>div>.latestprojectHeading{
+    font-size: 38px;
+    letter-spacing: 1px
+}
+.latestproject>.latestprojectGrid{
+    width: 100%;
+}
+.projectGrid{
+    width: 100%;
+}
+}

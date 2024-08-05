@@ -2,8 +2,9 @@
 import Hero from './Hero';
 import About from './About';
 import BestService from './BestService';
-import Work from './Work';
-import Contact from './Contact';
+import LatestProject from './LatestProject';
+import GetinTouch from './GetinTouch';
+import Community from './Community';
 
 const Home = () => {
     return (
@@ -11,8 +12,10 @@ const Home = () => {
             <Hero />
             <About />
             <BestService />
-            <Work />
-            <Contact />
+            <LatestProject />
+            <GetinTouch />
+            <Community />
+
         </div>
     );
 }

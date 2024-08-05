@@ -44,7 +44,7 @@
 
 // export default About;
 
-import React, { useRef, useEffect } from 'react';
+import  { useRef, useEffect } from 'react';
 import about1 from '../assets/about1.png';
 import about2 from '../assets/about2.png';
 // import about3 from '../assets/about3.jpg';
@@ -84,7 +84,7 @@ const About = () => {
 
 
     return (
-        <div className="p-5 h-[1000px] md:p-20 text-center top-[-250px] w-full mx-auto relative">
+        <div className="p-5 h-[400px] md:h-[1000px] md:p-20 text-center top-[-250px] w-full mx-auto relative">
             {/* <img src={about3} alt="Main Image" className="w-full h-auto max-w-[1245px] mx-auto" /> */}
             <video
                 ref={videoRef}
